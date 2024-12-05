@@ -1,0 +1,100 @@
+/*
+  Name: Eason Meng
+  Section AF
+  5/31/2024
+
+  style.css defines the front-end styling of the login page, register page,
+  and the main page of my final project
+*/
+
+body, button {
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(235, 235, 176);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+#home-page > p {
+  text-align: center;
+  font-size: 20px;
+}
+
+#welcome-page p {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+#welcome-page p:hover {
+  color: gray;
+}
+
+.error {
+  color: red;
+  text-decoration: underline;
+  text-align: center;
+}
+
+#gallery img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+#gallery img:hover {
+  box-sizing: border-box;
+  border: gray 5px solid;
+}
+
+#interface {
+  background-color: orange;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+#interface button {
+  height: 30px;
+}
+
+#gallery, #interface {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#gallery {
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+article > section {
+  display: flex;
+}
+
+.card {
+  border: orange solid 5px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.compact {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.cozy {
+  margin-left: 70px;
+  margin-right: 70px;
+}

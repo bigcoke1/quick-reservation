@@ -1,0 +1,87 @@
+<!--
+  Name: Eason Meng
+  Section AF
+  5/31/2024
+
+  index.html represents the front-end structure of the login page, register page, and main page
+  of the final project
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+    <title>Quick Reservations</title>
+  </head>
+  <body>
+    <article id="welcome-page" class="center">
+      <h1>Welcome to Quick Reservation!</h1>
+      <form id="login-form">
+        Username: <input name="username" type="text">
+        Password: <input name="password" type="password">
+        <button id="login-btn">Log in!</button>
+      </form>
+      <p>Register for a new account</p>
+    </article>
+    <article id="register-page" class="hidden center">
+      <form id="register-form">
+        Username: <input name="username" type="text">
+        Email: <input name="email" type="text">
+        Phone Number: <input name="phone" type="tel">
+        Password: <input name="password" type="password">
+        <button id="register-btn">Register</button>
+      </form>
+    </article>
+    <article id="home-page" class="hidden">
+      <section id="interface">
+        <p>Quick Reservation Homepage</p>
+        <select>
+          <option>cozy</option>
+          <option>compact</option>
+        </select>
+        <button id="home-btn">Home</button>
+        <button id="history-btn">History</button>
+        <button id="account-btn">Account</button>
+        <select id="filter">
+          <option>All</option>
+        </select>
+        <input type="text" id="search-bar" placeholder="search...">
+        <button id="search-btn" disabled>Search</button>
+      </section>
+      <section id="gallery"></section>
+      <article class="hidden" id="history"></article>
+      <article class="hidden center" id="account">
+        <p></p>
+        <p></p>
+        <p></p>
+        <button>Delete Account</button>
+      </article>
+      <article id="reservation-page" class="center hidden">
+        <h2 id="restaurant-name"></h2>
+        <p id="rating">Rating: <strong></strong></p>
+        <p id="address"></p>
+        <p id="capacity"></p>
+        <p id="min-guests"></p>
+        <form id="reserve-form">
+          Number of Guests <input type="number" name="numGuests" min="1">
+          <button id="reserve-btn" disabled>Reserve!</button>
+        </form>
+        <form id="review-form">
+          Rating: <input type="number" min="1" max="5" name="rating">
+          Comment: <input type="text" name="comment" id="comment">
+          <button>Submit Review!</button>
+        </form>
+      </article>
+      <article id="confirm-page" class="center hidden">
+        <h2>You're about to make a reservation at...</h2>
+        <p>Restaurant: <strong></strong></p>
+        <p>Number of Guests: <strong></strong></p>
+        <button>Confirm!</button>
+      </article>
+    </article>
+    <p class="error hidden">An Error Occured! Try Again Later!</p>
+  </body>
+</html>
